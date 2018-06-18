@@ -6,7 +6,7 @@ const fs = require('fs');
 const express = require('express');
 const PORT = process.env.PORT || 3000;
 const app = express();
-// TODO: Set your conString
+// DONE-TODO: Set your conString
 const conString = 'postgres://localhost:5432/kilovolt';
 const client = new pg.Client(conString);
 client.connect();
